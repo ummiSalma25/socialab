@@ -1,0 +1,350 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.text-top-left,
+.text-bottom-right {
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+
+.text-top-left {
+  top: 30%;
+  left: 5%;
+}
+
+.text-top-left h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.text-bottom-right {
+  bottom: 15%;
+  right: 5%;
+  font-size: 0.9rem;
+  text-align: right;
+  opacity: 0.8;
+  font-family: 'Nunito Sans', sans-serif;
+}
+  
+
+body {
+  background-color: #222222;
+}
+
+.header-container {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(12px); /* Blur effect */
+  -webkit-backdrop-filter: blur(12px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light white border */
+  color: #ffffff;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.navmenu a {
+  color: white;
+}
+
+.navmenu a:hover {
+  color: #ff6f61;
+}
+
+.coal {
+  background-color: #222222;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+
+
+
+.about-section {
+  padding: 5rem 0;
+  background-color: #f4f0e7;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-meta {
+  font-size: 170px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+}
+
+.about-title h2 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0;
+  color: #111;
+}
+
+.about-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.book-call-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #f1efe7;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f1efe7;
+  transition: 0.3s;
+}
+
+.book-call-btn:hover {
+  background-color: #ff6f61;
+  border: none;
+  color: #f1efe7;
+  transition: 0.3s ease-in-out;
+}
+
+.about-images {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.about-images .img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.about-images .img-back {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.about-images .img-front {
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.btn-read2 {
+  background-color: transparent; 
+  border: 1px solid #f1efe7;
+  color: white;
+}
+
+.btn-read2:hover {
+  background-color: #ff6f61;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+@media (max-width: 768px) {
+  .text-top-left {
+    top: 20%;
+  }
+
+  .about-meta {
+    font-size: 100px;
+    margin: 0;
+  }
+}
+
+
+
+
+
+body.mobile-nav-active .navmenu ul {
+  display: block !important;
+  position: fixed;
+  inset: 80px 20px auto 20px;
+  background-color: #222222;
+  color: white;
+  z-index: 99999;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+
+.mobile-nav-active .navmenu {
+  position: fixed;
+  background: transparent; /* ← remove the overlay */
+ 
+}
+
+
+
+.accent-text {
+  color: #ff6f61; /* Change this color to match your branding 02771a */
+}
+
+.core-values-section {
+  background-color: #222222;
+  background-image: url('../img/values 3.png'); /* Optional dark image */
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+
+
+.text-accent {
+  color: #ff6f61; /* Your accent colour */
+}
+
+.text-light {
+  color: #e0e0e0 !important;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem 1.5rem;         /* Adjust spacing inside */
+  min-height: 320px;            /* Makes all cards uniform height */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* control spacing between elements */
+  justify-content: space-between; /* don't force space between */
+  align-items: start;
+}
+
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.value-card p:first-child {
+  color: #a16d6d;
+  font-weight: 500;
+}
+
+.value-card h5 {
+  margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+  .core-values-section {
+    background-size: cover;  /* On mobile, it's better to fill than fit */
+    height: auto;
+  }
+
+  .value-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.team-section {
+  background-color: #222222;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text-accent {
+  color: #ff6f61;
+}
+
+.team-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.call-to-action .container {
+  background: #6a6a6a;
+}
+
+.footer-nav li a {
+  color: #f1efe7;
+}
+
+.footer-nav li a:hover {
+  color: #ff6f61;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  border-top: 1px solid #6a6a6a;
+}
+
+
